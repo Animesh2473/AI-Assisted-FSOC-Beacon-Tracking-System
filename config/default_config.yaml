@@ -1,0 +1,28 @@
+# FSOC Virtual Camera Tracking System - default configuration
+# Values reflect the reference parameter table in the SIH problem statement.
+
+world_size: [2000, 2000]        # virtual scene ("screen") size, px
+camera_resolution: [640, 480]   # camera sensor resolution, px
+camera_fov_deg: [4.0, 3.0]      # horizontal x vertical FOV, degrees
+camera_update_rate_hz: 30
+max_pan_speed: 5.0              # deg/s
+max_tilt_speed: 5.0             # deg/s
+
+target_shape: square            # square | circle
+target_size: 10                 # px (5-20 allowed)
+target_motion: circular         # straight_line | circular | figure8 | random | spiral | sinusoidal
+target_speed: 150.0             # world px/s
+num_targets: 1
+
+noise_types: [gaussian]         # any of: gaussian, salt_pepper, poisson
+noise_std: 10                   # max 20 per spec
+salt_pepper_amount: 0.05        # fraction of pixels (spec allows up to ~0.10)
+
+atmosphere: clear               # clear | haze | fog | rain | low_light
+atmosphere_intensity: 0.4       # 0..1
+
+camera_jitter_px: 5             # max +/-20 px/frame per spec
+platform_motion: linear         # linear | circular | random | spiral | figure8
+platform_motion_px: 5           # max +/-20 px/frame per spec
+
+seed: 42

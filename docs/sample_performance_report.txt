@@ -1,0 +1,12 @@
+FSOC Virtual Camera Tracking - Performance Report
+====================================================
+simulation_duration_s         : 2.48
+total_frames                  : 150
+avg_fps                       : 78.47
+acquisition_time_s            : 0.033
+avg_tracking_error_px         : 14.126
+max_tracking_error_px         : 53.809
+lock_retention_rate_pct       : 100.0
+target_loss_pct               : 0.0
+avg_reacquisition_time_s      : None
+avg_processing_time_ms        : 12.743

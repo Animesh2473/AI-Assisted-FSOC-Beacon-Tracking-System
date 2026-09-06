@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+*.mp4
+!docs/sample_tracking.mp4
+performance_log.csv
+performance_report.txt
+tracking_output.mp4
+.DS_Store
+.vscode/
+.idea/
